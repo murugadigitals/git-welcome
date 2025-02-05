@@ -13,29 +13,56 @@
 
 </head>
 <body class=" text-center py-5 text-bg-warning" >
-    <h2 style="background-color: linear-gradient(red,black);">Welcome to Java Script</h2>
+    <h2 style="background-color: linear-gradient(red,black);">Hi, Hello Welcome to My World</h2>
 
     <div class="test">
-        <h2>Hi Hello MS</h2>
+        <h2>Hello Dilli</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tenetur.</p>
     </div>
 
-    <h1 class="text-bg-primary display-1"></h1>
+    <h1 class="text-bg-primary display-4"></h1>
     <div style="height: auto;" class="justify-content-center w-100">
-        <button class="btn btn-danger " id="clickMe" style="display: block;">Don't Touch Me</button>
+        <button class="btn btn-danger my-5" id="clickMe1" style="display: inline-block;">Don't Touch Me</button>
+        <button class="btn btn-danger my-5" id="clickMe2" style="display: inline-block;">Don't Touch Me</button>
+        <button class="btn btn-danger my-5" id="clickMe3" style="display: inline-block;">Don't Touch Me</button>
     </div>
     <img src="" alt="">
 
+    <footer class="my-5">
+        <h3 class="text-bg-primary">All Rights Received<br> Design and developed by <span class="bg-danger">Jambugolam Dilli babu</span></h3>
+    </footer>
+
 <script>
         $(document).ready(function(){
-            $("#clickMe").contextmenu(function(){
+            $("#clickMe1").mouseover(function(){
                 $("h2").css('color','red');
-                $("h1").html("Welcome Jambugolam Dilli Babu")
+                $("h1").html("జంబుగోళం ఢిల్లీ బాబు ")
                 $(this).css('color','blue');
-                $(this).css('background','yellow')
-                $("img").attr('src','./assets/pooja.jpg')
-                $("img").css({'height':'300','width':'250'})
-                // $("img").toggle("slow").fadeOut()
+                $(this).css('background','linear-gradient(red,white)')
+                $("img").attr('src','./assets/sai1.jpeg')
+                $("img").css({'height':'500','width':'600'})
+            })
+        })
+
+        $(document).ready(function(){
+            $("#clickMe2").mouseover(function(){
+                $("h2").css('color','red');
+                $("h1").html("జంబుగోళం ఢిల్లీ బాబు ")
+                $(this).css('color','blue');
+                $(this).css('background','linear-gradient(red,yellow)')
+                $("img").attr('src','./assets/sai2.jpeg')
+                $("img").css({'height':'500','width':'600'})
+            })
+        })
+
+        $(document).ready(function(){
+            $("#clickMe3").mouseover(function(){
+                $("h2").css('color','red');
+                $("h1").html("జంబుగోళం ఢిల్లీ బాబు ")
+                $(this).css('color','blue');
+                $(this).css('background','linear-gradient(green,pink)')
+                $("img").attr('src','./assets/sai3.jpeg')
+                $("img").css({'height':'500','width':'600'})
             })
         })
 
